@@ -7,18 +7,18 @@ var fg = new Image();
 var pipeUp = new Image();
 var pipeBottom = new Image();
 
-bird.src = "/images/bird.png";
-bg.src = "/images/bg.png";
-fg.src = "/images/fg.png";
-pipeUp.src = "/images/pipeNorth.png";
-pipeBottom.src = "/images/pipeSouth.png";
+bird.src = "images/bird.png";
+bg.src = "images/bg.png";
+fg.src = "images/fg.png";
+pipeUp.src = "images/pipeNorth.png";
+pipeBottom.src = "images/pipeSouth.png";
 
 // Звуковые файлы
 var fly = new Audio();
 var score_audio = new Audio();
 
-fly.src = "/music/fly.mp3";
-score_audio.src = "/music/score.mp3";
+fly.src = "music/fly.mp3";
+score_audio.src = "music/score.mp3";
 
 // Растояние между верхней трубой и нижней 
 var gap = 90;
