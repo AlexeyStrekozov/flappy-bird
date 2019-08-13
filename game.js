@@ -32,6 +32,7 @@ pipe[0] = {
 
 //При нажатии на кнопку 
 document.addEventListener("keydown", moveUp);
+document.addEventListener("tap", moveUp);
 
 function moveUp() {
     yPos -= 25;
@@ -61,13 +62,13 @@ function render () {
             });
         }
         // Отслеживание прикосновений
-        if(xPos + bird.width >= pipe[i].x 
-            && xPos <= pipe[i].x + pipeUp.width
-            && (yPos <= pipe[i].y + pipeUp.height
-                || yPos + bird.height >= pipe[i].y + pipeUp.height + 
-                gap) || yPos + bird.height >= canvas.height - fg.height) {
+        if(xPos + bird.width >= pipe[i].x && xPos <= pipe[i].x + pipeUp.width 
+            && (yPos <= pipe[i].y + pipeUp.height 
+                || yPos + bird.height >= pipe[i].y + pipeUp.height + gap) 
+                || yPos + bird.height >= canvas.height - fg.height) {
                     location.reload(); // Перезагрузка страницы
                 }
+
         if(pipe[i].x == 6) {
             score++;
             score_audio.play();
